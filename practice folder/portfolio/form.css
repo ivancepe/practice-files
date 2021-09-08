@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Playfair Display", serif;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  animation: transitionIn 0.75s;
+}
+.logo-container {
+  grid-column-start: 4;
+  grid-column-end: -1;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  position: relative;
+  color: #012a4a;
+  margin-top: 2%;
+}
+.header-container {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  text-align: center;
+  margin-top: 5%;
+  color: #012a4a;
+}
+.header-container p {
+  color: #012a4a;
+  margin-top: 10px;
+}
+
+.form-container {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  margin-top: 3%;
+  height: max-content;
+}
+input,
+textarea {
+  width: 500px;
+  resize: vertical;
+  padding: 15px;
+  margin-bottom: 1%;
+}
+#first-name,
+#last-name {
+  width: 49.5%;
+}
+#email {
+  width: 99%;
+}
+#message {
+  width: 99%;
+}
+label {
+  color: #012a4a;
+  font-size: larger;
+  padding-top: 10px;
+}
+
+.send-now {
+  font-family: "Poppins", sans-serif;
+  padding: 15px 80px;
+  background-color: #e29578;
+  color: whitesmoke;
+  letter-spacing: 4px;
+  font-size: 15px;
+  border: none;
+  margin-top: 10px;
+}
+.send-now:hover {
+  cursor: pointer;
+  background-color: #012a4a;
+  transition: ease-in-out;
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
